@@ -1,2 +1,10 @@
-yes there is a fault because the i is initialized as 1 instead of 0 so the 0 index is skipped.
+1. yes there is a fault because the i is initialized as 1 instead of 0 so the 0 index is skipped.
+
+2. No test case can avoid executing it. The initialisation runs on every call, whatever the input, so this one is impossible.
+
+3. [1,1,1,1,1,1,1,1,1,1] executes the fault with no error state. The skipped lecture was attended, so the count is 0 either way.
+
+4. [0,0,0,0,1,1,1,1,1,1] gives an error state but no failure. The count is 3 instead of 4, but both are >= 3, so the output is still true.
+
+5. Q5: [0,0,0,1,1,1,1,1,1,1] gives a failure. The expected count is 3 but the actual count is 2, so the student wrongly passes.
 
