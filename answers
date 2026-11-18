@@ -1,1 +1,2 @@
-yes there is a fault because the i is initialized as 1
+yes there is a fault because the i is initialized as 1 instead of 0 so the 0 index is skipped.
+
